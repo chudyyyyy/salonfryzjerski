@@ -1,0 +1,191 @@
+a:link{
+    color: black;
+}
+
+:root { 
+    --color-dark: rgb(69, 69, 69);
+    --color-light: 	#725c214d;
+}
+
+body{
+        background: var(--color-light);
+        background: linear-gradient(
+            to top right, 
+            var(--color-dark), 
+            var(--color-light)
+            );
+        font-size: 14px;
+        justify-content: center;
+        width: 100%;
+        height: 99%;
+        overflow: hidden;
+        overflow: auto;
+        font-family: 'Georgia';
+}
+
+.kontener{
+    background: linear-gradient(
+        to right,
+        rgba(150, 150, 150, 0.185),
+        rgba(94, 94, 94, 0.199)
+    );
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 30px 30px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    max-width: 500px;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 75px auto;
+    color: white;
+    margin-bottom: 280px;
+    margin-top: 150px;
+
+}
+
+footer{
+    height: 65px;
+    width: 100%;
+    background-color: #4b4949;
+    text-align: center;
+    color: white;
+}
+
+textarea{
+    text-align: center;
+    resize: none;
+    background-color: #3b3b3bc0;
+    color: whitesmoke;
+    
+}
+
+.form_inp_login{
+    max-width: 180px;
+    border-radius: 5px;
+    background-color: #5344192d;
+    text-align: center;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+}
+
+::placeholder{
+    color: white;
+}
+
+.form_lab_login{
+    border-radius: 5px;
+    left: 24px;
+    cursor: text;
+    position: absolute;
+    top: 50%;
+    font-style: italic;
+}
+
+select{
+    border-radius: 5px;
+    background-color: #5344192d;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 14px;
+}
+
+.form_inp_check{
+    color: white;
+    box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.1);
+    margin-left: 80px;
+    cursor: text;
+    position: absolute;
+    font-style: italic;
+    width: 10px;
+}
+
+.form_spacer{
+    background:rgba(255,255,255, 0.55) ;
+    height: 2px;
+    width: 80%;
+    margin: 0 auto 32px;
+}
+
+button{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.przycisk::after{
+    content: "";
+    display: block;
+    background: rgba(255,255,255, 0.5);
+    height: 100px;
+    width: 80px;
+    position: absolute;
+    left: -70px;
+    top: -50%;
+    transform: skewX(-15deg);
+    transition: left 0.15s linear;
+}
+
+.przycisk:hover::after{
+    left: 110%;
+}
+
+.przycisk{
+    background: linear-gradient(
+        to left,
+        rgba(255,255,255,0.05),
+        rgba(255,255,255,0.35)
+    );
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.3);
+    color: rgb(255,255,255);
+    padding: 6px 12px;
+    font-size: 16px;
+    transition: box-shadow 0.3s, outline 0.3s;
+}
+
+.form_inp_login_birth{
+    max-width: 180px;
+    border-radius: 5px;
+    background-color: #5344192d;
+    text-align: center;
+    color-scheme: dark;
+    color: whitesmoke;
+    border: none;
+    padding: 8px 35px;
+}
+
+.form_inp_check_login{
+    color: rgb(255,255,255);
+    box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.1);
+    margin-left: 80px;
+    cursor: text;
+    position: absolute;
+    font-style: italic;
+    width: 150px;
+}
+
+.daneobowiazkowe{
+    margin-top: 350px;
+}
+
+select{
+    text-indent: 2px;
+}
+
+@media (max-width: 700px) { 
+    footer {
+        height: 125px;
+        max-width: 100%;
+        width: 1250px;
+        margin: 0 auto;
+        background-color: #4b4949;
+        text-align: center;
+        color: white;
+    }
+}

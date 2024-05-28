@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/zarejestruj.css">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Super fryzjer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Super fryzjer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">    
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Strona główna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="zarejestruj.html">Zarejestruj</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="zaloguj.html">Zaloguj</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontakt.html">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pracownicy.html">Pracownicy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="oferta.html">Oferta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="praca.html">Praca</a>
+            </li>
+            <li>
+              <div class="daneobowiazkowe">
+              <center>
+                  Zegar:
+                  <div id="zegar"></div>
+                  <br>  
+                  Data:
+                  <div id="data"></div>
+                  <br>
+                  <div id="czas_spedzony">Czas spędzony na stronie naszego salonu:
+                    <br>
+                     <span id="czas_uplynal">0 sekund</span>
+                  </div>
+                    <script src="../js/zegar.js"></script>
+                  </center>
+                </div>
+              </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+      <article>
+        <article>
+
+            <div class="kontener">
+              <h4>Zarejestruj się</h4>
+              <br>
+              <form class="form_reg" autocomplete="off" action="mailto:info@example.com" method="GET">
+                  <div class="form_inp_cont">
+                    Imię:
+                    <br>
+                    <input type="text" id="Imie" class="form_inp_login" placeholder="Imię" required> 
+                    <label class="form_lab_login"  for="Imie"></label>
+                </div>
+                <br>
+                <div class="form_inp_cont">
+                    Nazwisko:
+                    <br>
+                    <input type="text" id="Nazwisko" class="form_inp_login" placeholder="Nazwisko" required>
+                    <label class="form_lab_login"  for="Nazwisko"></label>
+                </div>
+                
+  
+                  <br>
+  
+                  <div class="form_inp_cont">
+                      Hasło:
+                      <br>
+                      <input type="password" id="haslo" class="form_inp_login" placeholder="Hasło" required>
+                      <label class="form_lab_login"   for="haslo"></label>
+                  </div>
+  
+                  <br>
+  
+                  <div class="form_inp_cont">
+                      Adres e-mail:
+                      <br>
+                      <input type="email" id="mail" class="form_inp_login" placeholder="Adres e-mail" required>
+                      <label class="form_lab_login"  for="mail"></label>
+                  </div>
+  
+                  <br>
+  
+                  <div class="form_inp_cont">
+                      Numer telefonu:
+                      <br>
+                      <select name="kierunkowy" id="kierunkowy" required>
+                        <option value="+44">+44</option>
+                        <option value="+45">+45</option>
+                        <option value="+46">+46</option>
+                        <option value="+47">+47</option>
+                        <option value="+48">+48</option>
+                        <option value="+49">+49</option>
+                      </select>
+                      <input type="tel" id="nr_telefon" class="form_inp_login" placeholder="Numer Telefonu" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
+                      <label class="form_lab_login"  for="nr_telefon"></label>
+                  </div>
+  
+                  <br>
+  
+                  <div class="form_inp_cont">
+                      Podaj datę urodzenia:
+                      <br>
+                      <input class="form_inp_login_birth" id="data_urodzenia" type="date" aria-label="data_urodzenia" min="01-01-1910" onfocus="this.max=new Date().toISOString().split('T')[0]" required/>
+                      <label class="form_lab_login" for="data_urodzenia"></label>
+                  </div> 
+                  <br>                
+                    
+                  <br>
+                  <div class="form_spacer" aria-hidden="true"></div>
+                  <div class="form_inp_check">
+                      <input type="checkbox" class="form_inp_cont"  id="regulamin" aria-label="regulamin" required>
+                  </div>
+                  <div class="regulamin" >Akceptuję regulamin salonu.
+                      <a href="regulamin_salonu.html">Regulamin</a>
+                  </div>
+                  <br>
+                  <div class="form_inp_check">
+                    <input type="checkbox" class="form_inp_cont"  id="newsletter" aria-label="newsletter" >
+                </div>
+                <div class="regulamin" >Chce otrzymywać powiadomienia <br> o nowościach na maila.
+                </div>
+  
+                  <br>
+  
+                  <div class="form_spacer" aria-hidden="true"></div>
+  
+                   <button class="przycisk">Zarejestruj się</button>
+                   <br>
+                   <br>
+                   <br>
+  
+                   <div class="form_spacer" aria-hidden="true"></div>
+  
+                   <h6>Mam już konto</h6>
+  
+                   <button class="przycisk" type="button" onclick="location.href='Zaloguj.html'">Zaloguj się</button>   
+              </form>
+              </div>
+        </article>
+        <footer>
+          <br>
+          <h6>Projekt strony internetowej wykonany w ramach zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka. Wykonał: Mikołaj Chudak</h6>
+        </footer>
+      </article>
+</body>
+</html>

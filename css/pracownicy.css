@@ -1,0 +1,215 @@
+a:link{
+    color: black;
+}
+
+:root { 
+    --color-dark: rgb(69, 69, 69);
+    --color-light:     #725c214d;
+}
+
+body{
+        background: var(--color-light);
+        background: linear-gradient(
+            to top right, 
+            var(--color-dark), 
+            var(--color-light)
+            );
+        font-size: 14px;
+        justify-content: center;
+        width: 100%;
+        height: 99%;
+        overflow: hidden;
+        overflow: auto;
+        font-family: 'Georgia';
+}
+
+.kontener{
+    background: linear-gradient(
+        to right,
+        rgba(150, 150, 150, 0.185),
+        rgba(94, 94, 94, 0.199)
+    );
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 30px 30px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    max-width: 1250px;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 75px auto;
+    color: white;
+    margin-bottom: 500px;
+    margin-top: 130px;
+
+}
+
+.pracownicy{
+    display: inline;
+}
+
+.kontener_pracownik {
+    display: flex;
+    align-items: center;
+}
+
+.zdjecie {
+    flex: 1;
+    max-width: 25%;
+}
+
+.opis{
+    flex: 1;
+    max-width: 50%;
+}
+
+
+img{
+    height: 200px;
+    width: 300px;
+    margin-right: 1000px;
+    margin-bottom: 20px;
+
+}
+
+.malykontener{
+    height: 300px;
+    width: 29%;
+    background-color: #555555;
+    border: black;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    border-radius: 8px;
+    font-size: 17px;
+    float: left;
+    margin: 20px;
+    margin-left: 30px
+}
+
+.tekst{
+    text-align: center;
+    width: 1200px;
+    height: 35px;
+    margin-top: 20px;
+}
+.tekst_dolny{
+    text-align: center;
+    width: 100%;
+    height: 35px;
+    margin-top: 350px;
+}
+
+@media screen and (max-width: 700px) {
+    .tekst {
+        margin-bottom: -150px;
+        margin-left: 10px;
+    }
+  }
+@media screen and (max-width: 700px) {
+    .malykontener, .tekst, .tekst_dolny {
+      width: 95%;
+      height: 300px;
+    }
+  }
+@media screen and (max-width: 700px) {
+    .malykontener {
+        margin-left: 10px;
+        margin-top: -10px;
+    }
+  }
+@media screen and (max-width: 700px) {
+    .tekst_dolny {
+        margin-left: 10px;
+        margin-top: -10px;
+    }
+  }
+@media screen and (max-width: 700px) {
+    .tekst {
+        margin-bottom: -80px;
+        margin-left: 10px;
+    }
+  }
+@media screen and (max-width: 700px) {
+    .opis {
+        margin-left: 15px;
+        margin-top: 250px;
+    }
+  }
+@media screen and (max-width: 700px) {
+    .zdjecie {
+        margin-left:-15px;
+        margin-top: -250px;
+    }
+  }
+
+
+footer{
+    height: 65px;
+    width: 100%;
+    background-color: #4b4949;
+    text-align: center;
+    color: white;
+}
+
+button{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.przycisk::after{
+    content: "";
+    display: block;
+    background: rgba(255,255,255, 0.5);
+    height: 100px;
+    width: 80px;
+    position: absolute;
+    left: -70px;
+    top: -50%;
+    transform: skewX(-15deg);
+    transition: left 0.15s linear;
+}
+
+.przycisk:hover::after{
+    left: 110%;
+}
+
+.przycisk{
+    background: linear-gradient(
+        to left,
+        rgba(255,255,255,0.05),
+        rgba(255,255,255,0.35)
+    );
+    border: none;
+    width: 115px;
+    box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.3);
+    color: rgb(255,255,255);
+    padding: 6px 12px;
+    font-size: 16px;
+    transition: box-shadow 0.3s, outline 0.3s;
+}
+
+@media screen and (max-width: 700px) {
+    .przycisk {
+        height: 60px;
+        width: 75px;
+    }
+  }
+
+  .daneobowiazkowe{
+    margin-top: 350px;
+}
+
+@media (max-width: 700px) { 
+    footer {
+        height: 125px;
+        max-width: 100%;
+        width: 1250px;
+        margin: 0 auto;
+        background-color: #4b4949;
+        text-align: center;
+        color: white;
+    }
+}

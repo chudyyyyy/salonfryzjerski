@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/kontakt.css">
+    <title>Document</title>
+    <style>
+      #tableContainer {
+        margin-left: -125px;
+      }
+      table {
+          border-collapse: collapse;
+          width: 100%;
+          width: 1000px;
+          border: solid 1px black;
+          margin-left: 210px;
+      }
+
+      th, td {
+          text-align: left;
+          padding: 8px;
+          border: 1px solid black;
+          text-align: center;
+          
+      }
+      
+      th{
+          background-color: #0f0f0f36;
+      }
+  </style>
+</head>
+<body>
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Super fryzjer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Super fryzjer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">    
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Strona główna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="zarejestruj.html">Zarejestruj</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="zaloguj.html">Zaloguj</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontakt.html">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pracownicy.html">Pracownicy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="oferta.html">Oferta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="praca.html">Praca</a>
+            </li>
+            <li>
+              <div class="daneobowiazkowe">
+              <center>
+                  Zegar:
+                  <div id="zegar"></div>
+                  <br>  
+                  Data:
+                  <div id="data"></div>
+                  <br>
+                  <div id="czas_spedzony">Czas spędzony na stronie naszego salonu:
+                    <br>
+                     <span id="czas_uplynal">0 sekund</span>
+                  </div>
+                    <script src="../js/zegar.js"></script>
+                  </center>
+                </div>
+              </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+      <div class="kontener" height="1500">
+        <h3>Oferta</h3>
+        <div class="tekst">
+          Nasz salon świetnie się tobą zajmie. Nasi pracownicy zajmują się praktycznie wszystkim. Możemy umyć ci główę i zapewnić świetne strzyżenie bądź też pomalować ci włosy.
+        </div>
+        <h3>Plan na ten tydzień</h3>
+        <div id="tableContainer"></div>
+      <script src="../js/tabela.js"></script>
+      <br>
+      Informację na temat wolnego terminu można uzyskać bezpośrenio od 
+      <a href="pracownicy.html">pracowników</a>
+      dzwoniąc bezpośrednio na ich numer telefonu
+      <div class="container-main">
+        <br>
+        <br>
+        <h1>Nasz salon</h1>
+        <h4>Kliknij na poszczególne punkty aby dowiedzieć się gdzie je kupiliśmy</h4>
+        <figure>
+            <img src="../zdjecia/znacznikmap.png" name="znacznikmap" usemap="#znacznikmapareas" />
+            <map name="znacznikmapareas">
+                <area shape="rect" coords="436,278,640,604" alt="lustro1"
+                      href="https://www.enzopolska.pl/meble-fryzjerskie/konsole-fryzjerskie/17159,konsola-konsoleta-fryzjerska-barberska-kosmetyczna-lustro-led-rama-aluminiowa-170x70-std?gad_source=1&gclid=EAIaIQobChMIktbeh-mwhgMVkAuiAx07ew40EAQYECABEgJFQ_D_BwE"  target="_self"/>
+        
+                <area shape="rect" coords="429,610,547,669" alt="zlew"
+                      href="https://www.vevor.pl/umywalka-do-salonu-c_10888/czarny-plastik-abs-beauty-barber-umywalka-nascienna-p_010508837194?adp=gmc&country=PL&utm_source=google&utm_medium=cpc&utm_id=18566541056&ad_group=137461054450&ad_id=627487566602&utm_term=&gad_source=1&gclid=EAIaIQobChMIgr7d1-iwhgMV44loCR2tfAGXEAQYASABEgJWwPD_BwE"  target="_self" />
+        
+                <area shape="rect" coords="127,672,519,991" alt="krzesło"
+                      href="https://www.expondo.pl/physa-fotel-fryzjerski-200-kg-czarny-10040269?gad_source=1&gclid=EAIaIQobChMI-9ekoOmwhgMVZEGRBR25YAPcEAQYAyABEgIuAfD_BwE"  target="_self"/>
+        
+                <area shape="rect" coords="733,208,664,286" alt="lampa"
+                      href="https://www.google.com/aclk?sa=L&ai=DChcSEwja_Zau6bCGAxVVEKIDHanCClIYABAPGgJsZQ&gclid=EAIaIQobChMI2v2WrumwhgMVVRCiAx2pwgpSEAQYCCABEgKSPfD_BwE&sig=AOD64_2eknVLliyUdbvsXfAOi9o48TpgtA&ctype=5&q=&ved=2ahUKEwiW8JKu6bCGAxXNERAIHb_dDEQQwg8oAXoECAcQaA&adurl=" target="_self" />
+        
+                <area shape="rect" coords="199,307,151,619" alt="pokoj"
+                    href="javascript:alert('To jest pokoik dla pracowników, nic ciekawego tam nie ma')" target="_self" />
+            </map>
+        </figure>
+        </div>
+        <script src="../js/znacznikmap.js"></script>
+    </div>
+        <footer>
+            <br>
+            <h6>Projekt strony internetowej wykonany w ramach zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka. Wykonał: Mikołaj Chudak</h6>
+          </footer>
+        </body>
+        </html>
